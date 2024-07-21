@@ -1,0 +1,37 @@
+.btn-custom{
+  border-radius:10px;
+  outline: none;
+  border: seashell;
+  size: 20px;
+  background: transparent;
+  box-shadow: 0 0 15px #39ff10;
+  cursor:pointer;
+}
+
+.a1{
+  text-decoration: none;
+}
+.a1:active{
+  text-decoration:solid underline #383838;
+}
+
+
+.btn-custom:active{
+     box-shadow: none;      
+}
+.input-box{
+  width: 50px;
+  
+}
+.input-box1{
+  
+width: 25px;
+}
+
+.table-border{
+  box-shadow: 0 0 15px #383838;
+}
+
+.table-border1{
+  box-shadow: 0 0 5px #fdfafa;
+}
