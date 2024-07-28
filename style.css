@@ -1,3 +1,4 @@
+/**button gloe**/
 .btn-custom{
   border-radius:10px;
   outline: none;
@@ -7,6 +8,7 @@
   box-shadow: 0 0 15px #39ff10;
   cursor:pointer;
 }
+
 
 .a1{
   text-decoration: none;
@@ -28,6 +30,7 @@
 width: 25px;
 }
 
+/*bordering*/
 .table-border{
   box-shadow: 0 0 15px #383838;
 }
@@ -35,3 +38,26 @@ width: 25px;
 .table-border1{
   box-shadow: 0 0 5px #fdfafa;
 }
+
+
+
+/**btn toggle**/
+.btn-toggle{
+  border-radius: 12px;
+  border:none;
+
+}
+
+
+
+/**sample tesing**/
+
+#practicall{
+  position: relative;
+   display: none;
+
+
+}
+
+
+
