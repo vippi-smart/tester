@@ -28,13 +28,22 @@
   <!--nav ends -->
 
     <div class="container-fluid-md">
+      <!--subject button-->
           <div class="bg-dark text-white text-center p-5">
                 <h1>avc-cs-calculator</h1>
                   <p>your academic calculator and academic helper</p>
                   <button type="button" class="btn-custom text-white">get started</button>
           </div>
+          <!--ends-->
 
-        <div class="container-fluid-sm" >
+
+               <div class="text-center ">
+                <button type="button" class=" btn-toggle" id="theo" >theory</button>
+                <button type="button" class=" btn-toggle" id="pract">practical</button>
+                               </div>
+          
+          <!--main table-->
+        <div class="container-fluid-sm" id="actual">
              <form action="">
 
               <div  class="p-2 text-center  d-grid">
@@ -58,16 +67,16 @@
                  </tr>
              <tr>
               <td>
-                <input type="number" name="" id="" class="input-box1">
-                <input type="number" name="" id="" class="input-box1">    
-                <input type="number" name="" id="" class="input-box1">      
+                <input type="text"  name="" id="" class="input-box1">
+                <input type="text" name="" id="" class="input-box1">    
+                <input type="text" name="" id="" class="input-box1">      
               </td>
               <td>
-                <input type="number" name="" id="" class="input-box1">
-                <input type="number" name="" id="" class="input-box1">
+                <input type="text" name="" id="" class="input-box1">
+                <input type="text" name="" id="" class="input-box1">
                 
               </td>
-              <td><input type="number" name="" id="" class="input-box"></td>
+              <td><input type="number" name="" id="attend" class="input-box"></td>
 
               <td><input type="number" name="" id="" class="input-box"></td>
              </tr>
@@ -77,9 +86,75 @@
            
            
   </div>
-  <div class="bg-dark p-3 table-border1 d-grid"><button type="button" class="btn btn-warning btn-block">results</button></div>
-    </div>
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--form and div part-2-->
+  
+        <div class="container-fluid-sm" id="practicall" >
+          <form action="">
+
+            <div  class="p-2 text-center  d-grid">
+            <button type="button" class="btn btn-info btn-sm btn-block" >add</button>
+            </div>   
+
+
+            <div class="table-border bg-dark text-white text-center">
+           
+            <label for="usr">subject</label>
+            <input type="text" name="" id="usr" class="m-2 table-border1 "  style="border-radius: 10px; border: none;  ">
+            <button type="button" class="btn btn-small">-</button>
+            </div>
+
+            <table class="table table-striped table-bordered table-border">
+               <tr>
+                <th>assignment</th>
+                <th>cia</th>
+                <th>attendence</th>
+                <th>seminor</th>
+               </tr>
+           <tr>
+            <td>
+              <input type="text" name="" id="" class="input-box1">
+              <input type="text" name="" id="" class="input-box1">    
+              <input type="text" name="" id="" class="input-box1">      
+            </td>
+            <td>
+              <input type="text" name="" id="" class="input-box1">
+              <input type="text" name="" id="" class="input-box1">
+              
+            </td>
+            <td><input type="number" name="" id="attends" class="input-box"></td>
+
+            <td><input type="number" name="" id="" class="input-box"></td>
+           </tr>
+
+           <tr>
+
+            <th id=""></th>
+            <th id=""></th>
+            <th id="assignments"></th>
+            <th></th>
+           </tr>
+
+            </table>
+           </form>
+        </div>
+
+
+       
+        
+
+         <!--main table ends-->
+
+
+         <!--results button-->
+  <div class="bg-dark p-3 table-border1 d-grid"><button type="button" class="btn btn-warning btn-block" id="result">results</button></div>
+      </div>
+      <!--result buton ends-->
+
+     
+
+  <script src="script.js"></script>
+      <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
