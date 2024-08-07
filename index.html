@@ -11,7 +11,7 @@
 <body>
   <!--nav bar-->
  
-  <nav class="navbar navbar-expand-sm bg-dark" >
+  <nav class="navbar navbar-expand-sm " id="nav-bar" style="background-color: black;">
     
     <a class="navbar-brand " href=""><img src="logo.png" style="width: 50px;" class="rounded-pill " alt="" srcset=""></a>
     
@@ -23,24 +23,30 @@
     </div>
 
   </nav>
-
+              
 
   <!--nav ends -->
 
     <div class="container-fluid-md">
       <!--subject button-->
-          <div class="bg-dark text-white text-center p-5">
+          <div class="text-white text-center" style="background-color: black;">
+
+
+                 <img src="logo.png" alt=""  style="height: 150px;width: 150px;background-color: transparent;">
                 <h1>avc-cs-calculator</h1>
-                  <p>your academic calculator and academic helper</p>
+                <p >your's acadamic <strong id="canges"></strong></p>
                   <button type="button" class="btn-custom text-white">get started</button>
           </div>
           <!--ends-->
 
 
                <div class="text-center ">
-                <button type="button" class=" btn-toggle" id="theo" >theory</button>
+                <input type="checkbox" name="" id="togglers">
+                <label for="togglers" id="ball"><strong  id="t">theory</strong>
+                  <strong id="p">practical</strong></label> 
+              <!--  <button type="button" class=" btn-toggle" id="theo" >theory</button>
                 <button type="button" class=" btn-toggle" id="pract">practical</button>
-                               </div>
+                               </div>-->
           
           <!--main table-->
         <div class="container-fluid-sm" id="actual">
@@ -50,15 +56,15 @@
               <button type="button" class="btn btn-success btn-sm btn-block" >add</button>
               </div>   
 
-
-              <div class="table-border bg-dark text-white text-center">
+                   
+              <div class="table-border bg-dark text-white text-center actual0" >
              
               <label for="usr">subject</label>
               <input type="text" name="" id="usr" class="m-2 table-border1 "  style="border-radius: 10px; border: none;  ">
               <button type="button" class="btn btn-small">-</button>
               </div>
 
-              <table class="table table-striped table-bordered table-border">
+              <table class="table table-striped table-bordered table-border actual0">
                  <tr>
                   <th>assignment</th>
                   <th>cia</th>
@@ -82,6 +88,7 @@
              </tr>
 
               </table>
+              </div>
              </form>
            
            
@@ -97,14 +104,14 @@
             </div>   
 
 
-            <div class="table-border bg-dark text-white text-center">
+            <div class="table-border bg-dark text-white text-center" style="background-image: linear-gradient(to bottom right,darkviolet,rgb(253, 12, 12));">
            
             <label for="usr">subject</label>
             <input type="text" name="" id="usr" class="m-2 table-border1 "  style="border-radius: 10px; border: none;  ">
             <button type="button" class="btn btn-small">-</button>
             </div>
 
-            <table class="table table-striped table-bordered table-border">
+            <table class="table table-striped">
                <tr>
                 <th>assignment</th>
                 <th>cia</th>

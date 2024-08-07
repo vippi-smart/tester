@@ -55,9 +55,112 @@ width: 25px;
 #practicall{
   position: relative;
    display: none;
+}
+
+/*sample test*/
+  #result{
+    border: solid ;
+    border-image-source: linear-gradient(to right,red,blue);
+    border-width: 2px;
+    border-image-slice: 1;
+    
+  }
 
 
+
+#togglers{
+    position: relative;
+    height: 100px;
+    width: 100px;
+     background-color:  indigo;
+      display:none;
+}
+#ball{
+  content: '';
+  position: relative;
+  height: 100px;
+  width:200px;
+  background-image: linear-gradient(to bottom right, blue,darkviolet);
+  border-radius: 100px;
+ margin-top: 5px;
+ padding-left: 20px;
+  color: #39ff10;
+  
+}
+
+#ball::after{
+  content: '';
+  position: absolute;
+  right: 0px;
+  height: 100px;
+  width: 100px;
+  background-image:url(theory.png) ;
+  background-position: center ;
+  background-size: contain;
+  border-radius: 100px;
+  transition: 1s ;
+}
+
+#togglers:checked + #ball::after{
+  transform: translateX(-100px);
+  transition: transform 1s;
+  background-image: url(practical.webp);
+  background-position: center;
+  background-size: contain;
+  
+ 
+  
 }
 
 
+#p{
 
+  position: relative;
+  top: 35px;
+   left: 10px ;
+   color:yellow;
+   font-weight :bolder;
+   font-size: large;
+}
+#t{
+   
+  position: relative;
+  top: 35px;
+  right: 25px;
+   font-weight: bolder;
+   color: #39ff10;
+   font-size: large;
+   
+}
+
+#canges{
+  position: relative;
+}
+
+#canges:before{
+  content: '';
+  position:absolute;
+  font-size: 60px;
+  width: 100%;
+  height: 30px;
+  background-color:black;
+  animation: ani 4s alternate-reverse steps(12) infinite;
+  animation-delay: 2ms;
+  border-left: solid white;
+}
+@keyframes ani{
+  10%{
+      left: 0px;
+  }
+  60%{
+    left: 50%;
+  }
+
+  100%{
+    left:100px;
+  }
+}
+
+.actual0{
+  background-image: linear-gradient(to bottom right ,rgb(8, 33, 255),darkviolet);
+}
