@@ -106,10 +106,7 @@ width: 25px;
   transition: transform 1s;
   background-image: url(practical.webp);
   background-position: center;
-  background-size: contain;
-  
- 
-  
+  background-size: contain;  
 }
 
 
@@ -135,6 +132,7 @@ width: 25px;
 
 #canges{
   position: relative;
+  overflow: hidden;
 }
 
 #canges:before{
@@ -145,8 +143,8 @@ width: 25px;
   height: 30px;
   background-color:black;
   animation: ani 4s alternate-reverse steps(12) infinite;
-  animation-delay: 2ms;
   border-left: solid white;
+
 }
 @keyframes ani{
   10%{

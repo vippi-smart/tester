@@ -62,9 +62,14 @@ const timings = () =>{
   setTimeout(()=>{
     canges.textContent="calculator";
   },4000);
+  setTimeout(()=>{
+    canges.textContent="mentor    ";
+  },13000);
+
+  
 } 
   timings();
-
+   setInterval(timings,13000);
 
 
 tog.addEventListener('change',cringee);
