@@ -27,7 +27,7 @@
 
   <!--nav ends -->
 
-    <div class="container-fluid-md">
+    <div class="container-fluid-sm">
       <!--subject button-->
           <div class="text-white text-center" style="background-color: black;padding-bottom: 30px;">
 
@@ -41,7 +41,7 @@
              <div class="about" >
               <i class="bi bi-calculator-fill"><p>calculating the internal marks </p></i>
               <i class="bi bi-percent"><p>find the attendence percentage</p></i>
-              <i class="bi bi-bar-chart-steps"><p>calcualte the CGPA </p></i>
+              <i class="bi bi-bar-chart-steps"><p>calculate the CGPA </p></i>
              </div>
 
                <div class="text-center ">
@@ -216,6 +216,64 @@
 			<!--result buton ends-->
         </div>
          <!--main table ends-->
+		<!--attendance table start-->
+    <div style="background-color:black">
+			<h3 class="text-center mt-3 text-white">attendance calculation</h3>
+			<table class="table table-striped table-bordered w-75 text-center mx-auto mt-3 table-border">
+			
+				<tr>
+					<th class="w-50">subjects</th>
+					<th>number of hours</th>
+					<th>attend hours</th>
+				</tr>
+				<tr>
+					<td>subject 1</td>
+					<td><input type="number" id="subject1_hour" class="input-box"></td>	
+					<td><input type="number" id="subject1_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 2</td>
+					<td><input type="number" id="subject2_hour" class="input-box"></td>	
+					<td><input type="number" id="subject2_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 3</td>
+					<td><input type="number" id="subject3_hour" class="input-box"></td>	
+					<td><input type="number" id="subject3_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 4</td>
+					<td><input type="number" id="subject4_hour" class="input-box"></td>	
+					<td><input type="number" id="subject4_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 5</td>
+					<td><input type="number" id="subject5_hour" class="input-box"></td>	
+					<td><input type="number" id="subject5_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 6</td>
+					<td><input type="number" id="subject6_hour" class="input-box"></td>	
+					<td><input type="number" id="subject6_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 7</td>
+					<td><input type="number" id="subject7_hour" class="input-box"></td>	
+					<td><input type="number" id="subject7_attend" class="input-box"></td>
+				</tr>
+				<tr>
+					<td>subject 8</td>
+					<td><input type="number" id="subject8_hour" class="input-box"></td>	
+					<td><input type="number" id="subject8_attend" class="input-box"></td>
+				</tr>
+			</table>
+            <div class="p-5" id="box10">
+                <p id="attend_per"></p>
+                <p id="attend_tot"></p>
+            </div>
+			<div class="bg-dark p-3 table-border1 d-grid"><button type="button" class="btn btn-warning btn-block" id="attendance_calculate">calculate</button></div>
+		</div>
+		<!--attendance table end-->
 
       </div>
      

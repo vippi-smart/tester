@@ -1,5 +1,3 @@
-
-
 let theory = document.getElementById("actual");
 let practicals = document.getElementById("practicall");
 
@@ -96,8 +94,8 @@ function practical_cia_cals(practical_cia_1,practical_cia_2){
 
 function attendance_cals(hour,attend){
 	let attendance_mark;
-	let attendance_percentage=attend/hour*100;
-	if(attendance_percentage<=74)
+	let attendance_percentage=Math.round(attend/hour*100);
+	if(attendance_percentage<=74)	
 	{
 		attendance_mark=0;
 	}
@@ -129,6 +127,7 @@ function attendance_cals(hour,attend){
 	{
 		attendance_mark=0;
 	}
+	
 	return attendance_mark;
 }
 
@@ -252,8 +251,91 @@ result_practical.addEventListener("click",()=>{
 	//practical_table_result.innerHTML="your internal mark is "+result_final1;
 });
 
-/*tooltip*/
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
+function attend_cals(hour,attend)
+{
+	let cals=Math.round(attend/hour*100);
+	return cals;
+}
+
+let box10=document.getElementById("box10");
+box10.style.display='none';
+	
+let attendance_calculate=document.getElementById("attendance_calculate");
+attendance_calculate.addEventListener("click",()=>
+{
+	let subject1_hour=Number(document.getElementById("subject1_hour").value);
+	let subject1_attend=Number(document.getElementById("subject1_attend").value);
+	let subject1=attend_cals(subject1_hour,subject1_attend);
+	
+	let subject2_hour=Number(document.getElementById("subject2_hour").value);
+	let subject2_attend=Number(document.getElementById("subject2_attend").value);
+	let subject2=attend_cals(subject2_hour,subject2_attend);
+	
+	let subject3_hour=Number(document.getElementById("subject3_hour").value);
+	let subject3_attend=Number(document.getElementById("subject3_attend").value);
+	let subject3=attend_cals(subject3_hour,subject3_attend);
+	
+	let subject4_hour=Number(document.getElementById("subject4_hour").value);
+	let subject4_attend=Number(document.getElementById("subject4_attend").value);
+	let subject4=attend_cals(subject4_hour,subject4_attend);
+	
+	let subject5_hour=Number(document.getElementById("subject5_hour").value);
+	let subject5_attend=Number(document.getElementById("subject5_attend").value);
+	let subject5=attend_cals(subject5_hour,subject5_attend);
+	
+	let subject6_hour=Number(document.getElementById("subject6_hour").value);
+	let subject6_attend=Number(document.getElementById("subject6_attend").value);
+	let subject6=attend_cals(subject6_hour,subject6_attend);
+	
+	let subject7_hour=Number(document.getElementById("subject7_hour").value);
+	let subject7_attend=Number(document.getElementById("subject7_attend").value);
+	let subject7=attend_cals(subject7_hour,subject7_attend);
+	
+	let subject8_hour=Number(document.getElementById("subject8_hour").value);
+	let subject8_attend=Number(document.getElementById("subject8_attend").value);
+	let subject8=attend_cals(subject8_hour,subject8_attend);
+	
+	
+	let arr=[subject1,subject2,subject3,subject4,subject5,subject6,subject7,subject8];
+	
+	let arr1=[];
+	let count=0;
+	for(let i=0;i<8;i++)
+	{
+		if(arr[i]>=0)
+		{
+			arr1.push(arr[i]);
+			count+=1;
+		}
+	}
+	
+	let attend_total=0;
+	arr1.forEach((attend)=>
+	{
+		attend_total=attend_total+attend;
+	})
+
+
+
+    let attend_per=document.getElementById("attend_per");
+    let attend_tot=document.getElementById("attend_tot");
+		let total_attendance=Math.round(attend_total/count);
+		let mess1="";
+		if(total_attendance<60)
+		{
+			mess1="you are not eligible for semester exam";
+			attend_tot.style.color='red';
+		}
+		else
+		{
+			mess1="you are eligible for semester exam";
+			attend_tot.style.color='green';
+			
+		}
+	if(total_attendance>=0)
+    {
+        box10.style.display='block';
+	    attend_per.textContent="your attendance percentage is "+total_attendance+"%";
+        attend_tot.textContent=mess1;
+    }
+});
