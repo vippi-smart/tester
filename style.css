@@ -11,7 +11,10 @@
 }
 .font-large{
   margin: 25px;
-          font-size: 400%;
+   font-size: 400%;
+  background: linear-gradient(to right,blue,aqua);    
+   background-clip: text;
+     color: transparent;
 }
 
 .a1{
@@ -178,6 +181,7 @@ width: 25px;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  width: auto;
 }
 .about i{
   font-size:10rem
@@ -186,5 +190,6 @@ width: 25px;
   font-size: large;
   font-weight: bolder;
   font-style: normal;
+
 }
 /* form  attributes and form styling */
