@@ -252,5 +252,8 @@ result_practical.addEventListener("click",()=>{
 	//practical_table_result.innerHTML="your internal mark is "+result_final1;
 });
 
-
- 
+/*tooltip*/
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})

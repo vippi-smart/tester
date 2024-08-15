@@ -1,0 +1,41 @@
+.form-show{
+  background-color: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(8px);
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+body{
+  background:linear-gradient(to right bottom,yellow,blue);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: auto;
+
+}
+
+
+    
+
+.form-control::placeholder{
+  color: rgb(255, 196, 0)   ;
+}
+
+.form-control:focus{
+  outline: none;
+  box-shadow: 0 3px 3px black;
+  background-color: transparent;
+  border: solid;
+  padding: 10px;
+  
+      
+}
+
+
+.form-label{
+  margin: 12px;
+  font-size: 100%;
+  font-weight: bolder;
+  
+}
